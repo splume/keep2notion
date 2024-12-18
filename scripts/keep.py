@@ -24,7 +24,9 @@ load_dotenv()
 def login():
     mobile = os.getenv("KEEP_MOBILE")
     password = os.getenv("KEEP_PASSWORD")
-    data = {"mobile": mobile, "password": password}
+    countryCode = os.getenv("KEEP_COUNTRYCODE")
+    countryName = os.getenv("KEEP_COUNTRYNAME")
+    data = {"mobile": mobile, "password": password, "countryCode": countryCode, "countryName": countryName}
     r = requests.post(LOGIN_API, headers=keep_headers, data=data)
     if r.ok:
         print("登录成功")
