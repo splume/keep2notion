@@ -7,12 +7,12 @@
             "birthday": 641520000000,
             "_id": "586d90be387e286fc788b348"
         },
-        "id": "586d90be387e286fc788b348_9223370271149614807_hk",
+        "id": "586d90be387e286fc788b348_9223370270887641807_hk",
         "feel": -1,
-        "calorie": 89,
-        "duration": 2640,
-        "startTime": 1765702521000,
-        "endTime": 1765705161000,
+        "calorie": 34,
+        "duration": 1053,
+        "startTime": 1765966081000,
+        "endTime": 1765967134000,
         "type": "hiking",
         "subtype": "normal",
         "timezone": "Asia/Shanghai",
@@ -37,9 +37,7 @@
         "flags": [
             29,
             95043,
-            95012,
-            95,
-            10095001
+            95012
         ],
         "heartRate": {
             "heartRates": null,
@@ -68,32 +66,14 @@
         "badgeAchievementCard": null,
         "goalType": "casual",
         "goalValue": 0,
-        "distance": 1870.600341796875,
-        "averagePace": 1411,
-        "averageSpeed": 2.5,
+        "distance": 692.8699340820312,
+        "averagePace": 1520,
+        "averageSpeed": 2.3,
         "polylineSnapshot": null,
         "constantVersion": "1.3.21",
-        "rawDataURL": "https://ot-sport-log.keepcdn.com/ot-sport-log/ot/HSUltenhfHBQLUp8b9sxtip70laDN-HbFidfgWO9v7vmDwguDipfU3i8RTJb8faz.txt",
-        "crossKmPoints": [
-            {
-                "id": null,
-                "kmPace": 1290,
-                "kmNO": 1,
-                "latitude": 0.0,
-                "longitude": 0.0,
-                "altitude": 0.0,
-                "timestamp": 1765703811,
-                "totalDistance": 1000.0,
-                "totalDuration": 1275.4578037045037,
-                "totalSteps": 1803.0,
-                "averagePointsNum": 0.0,
-                "averageAccuracyRadius": 0.0,
-                "totalCalories": 0,
-                "averageHeartRate": 0,
-                "stepFrequency": 0
-            }
-        ],
-        "geoPoints": "33mzkzGnozddUIrCrnsqwFhEfJhXy/Y5bDe6sz95rQL5fdwY9TqLWkqOLdU3K0hrtkmzA1G/l+TnTiYuXA/fvavZ3PaCqR4AlYTdHRQEE+enwdhu7S+bMtqcrx1NwxVJLQjrfPQFXV6jlNgbqxUKHh2X1Un5FQM7Kzv1O5hU7WjmNcYJ+GbzGe2ga8svMjTHtJpV7kHLOW2RleOWUm2qvH4apgavnTaibPedrs8Vy26sQAHLNCKns2grCsXIauCIu6c0AMs5CC/8cSxT3Sx/Q7t6p8D8NpuD14CnYNhWDE9g/Fo7hLNYE2JoONESxfsG6Eh+zbtaP04proHvugZ1zjWI0B9vWcHbQ43uaPIkMgW++PhhMr3NaYdpQL1QdBYtmgYkJRAUkRy6lrVsrqcB8hGtztmW0zD5L+Qw+J2Heh4hN2PRP6wDtaFMydMNaYp50PK5SOv7HqBIgPd+m0JHLw==",
+        "rawDataURL": "https://ot-sport-log.keepcdn.com/ot-sport-log/ot/HSUltenhfHBQLUp8b9sxtip70laDN-HbFidfgWO9v7ucBNg5SZgKGcbXOegMP2nr.txt",
+        "crossKmPoints": [],
+        "geoPoints": "33mzkzGnozddUIrCrnsqwEMeufRgpCKbaQUlm8AMno+nLntm6QcTERh0F17qLThc0q1iHqHnDLuP9yZgFPA3brXQaHBXYxPLnZzlJZKOpFO324+qYCrm+/UYKj8jhlRCq6XbG7CuIWsfvmDkx0WVJZ7go5MJEy1JneUc8tsPJMOErzy21xKE9YTkU+JNEE4RdPHIqfdRvZclZ9L+lrTOhgrUmK1qXI1aubjQe/dujDN3wJRG5tg5Uz/26DmCZXbuvTi+90Tzx1d6L75rdB9W0MGDMh4YmIQXV1OVL7eOGHTmNOnW1349kbAl28OeSq81XN6mznLsgsOGR/1OwUDz96CVnwvQIzNwW4xh935JFE/CUwiJp68HaO2i12r8h6TNGXWs/S2AUlaex+djwfZWd4u7QkG+3achy0SkOgiCiUFEt7MxcII3hoaWPIC7fFDCILq79tW2IYiXqWCvrRJaoQ==",
         "region": {
             "latitude": 30.572752,
             "longitude": 104.07725,
@@ -113,7 +93,7 @@
         "accumulativeClimbingDistance": 0.0,
         "mapboxStyle": null,
         "privacy": false,
-        "stepPoints": "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",
+        "stepPoints": "H4sIAAAAAAAAALWZzW6VRwyG7yVrNPL436x7B+0OsYhQWiHxJwgrxL3XXw4t6elnS1YCq4icKE/e8djPzLz6dnP/9v3dl/vb959uXm5TCVUI5Rc3b75+/nz34f6Pj/e37357m5/48OYuP6LLfQM7Aspmlf9+8Pf7u09fbl7Svvr5r59v799+/JA/Lwte3Pz57vav/Nirbw9f3bxE+f76+4szlr13yUI7WcBVIAxY4hTl+r9/ohAMUbCOhW0hImsQhhOF8ymMawXD01y4zkU4YWDHDhFRZdBTmA3lKuk0GqmjUVu5SBFZNRb5OwsYggrGptFYHY3vJS5EbGZOCHQOI17BxDQZr5MJWoKSW2knDTH5OYzXmwmG0WRVtDQKALLdwh0rGixpcJgN7qbPAK0wZlFz2xBVOFGu1KZpOFSHs7NvieZKMe/sN3Tea7ID1H1vGg434aAvYiTW3OS5vfG8C6PUa6XTcLQJh/c6GpLvrB0RtnMaKzvx9mk41oST7c/NslAB1EnivBXTdVd8hBPTcKIJR31pRLZINpdslHiOQ1Lh4B6mk39ajZNRbxRLZgoW2gVO3QERh+kQNulk12FhOpzjUsvnOPXgRJ6mQ3U6CLYgbSJhOEPyIh3eVOLINB2p08kpnl1HxBFNKKCoHeZyn6NN09EmHeJjeiIIHNGcNx22cpCjT7PxJhuOBQjMehmeVuBE43/TbBovRsWV6seBTLtULsGyjmlqxtyYcZbLyvmRDmiXwjmnkbKMaSrH3Mgxui/OmWXHhD16zjmNl4VDUzvmxo4JcqVMj0GlXlRNtqOSZerG3LhxlsraxhvwYqPnyShZSTOVY27kOM8uKaRAmHvYEqbY4f/vED9xpnrMjR7npl4CWTORwzGqDa5Rlg1P9VgaPaZs7AkCm2Ir5Bw/pUlVLWmmeiyNHpPoIk9b58PUq5Wy6/n1iGZqx9LY8dNppnYsjR0/nWYqx9LI8dNppnIsjRxTjqncMWk4AA9CUeBgXcZTOZZGjin1JHaE43EzICUOlYNKpnKsjRw/A85UjrWR42fAmcqxNnL8DDhTOdZGjsmOUsaArXsTXt+S/EtTGpdM3VgbN84TyqLIf+Rpic7nh06TcpLLVI61keMn0+jUjbVx4/TmRcKpm4iodeHUAqhTObZGjhlibT+uUCNSL4pwHOpwpnJs3c0xYqo68HaDvW2f3yx5fT2gUzm2Ro4PLUjxyzM+8c5jcEGj9c3xVI+t0WNmX1k1D/d/hf65l6auUze2xo05B6e4k3k9NWPXJTMVY2vEmE1XwlJ2AK1v/4LLkrGpGHsjxhw7zzASQA8nmIrGyqlgUzH2Rozl+NOMs2boslbn18bpYyXO1Iy9MWPZsXJcWkpcfdrM419522ZTM/bGjLMBL8jCulxtVTDXR5tHMFMx9kaMhXnlmQjRftwnFTj1g4NNzdgbMxaxlWoY3Fyo713fC9jUi73xYtFYeVzIdHZO76r3pfaUDcenXhyNF4vzMsPgwF0W8dZyh/vUiqOx4vx+HsRze2cBHTzFw9Cu7wV8asXRWLHCcb+fpirYXENuvH73fIQzteJorFiRFkimA5eX32JXYX1l7FMtjkaLNZupeLZiPkyrTudaNB7hTL04Gi9OF145GoI9A6hLGaMcnTEV42jEOB10EcWPJ8VysQjLnRVDMT4cs3mppyV5bMi+is17NF0/8D3CGZqxQWPG6rj+2eTVSpGW2yqGXmzQeHF2pOW5lsQ5j6B6NdvkdeEMxTinYhPN03GGcmzQyPEz4Az92KDx46fjpB8O49mNIT8Hz9CR8/z7a/MZSnLq+K/NZ6jJycPXneN5eWghgBdIr/8G0ZHJ4ngnAAA=",
         "fullStepPoints": null,
         "baselineAltitude": 0.0,
         "trainingDevices": null,
@@ -159,9 +139,9 @@
             "schema": null
         },
         "rpeFeedBack": null,
-        "totalSteps": 3355,
+        "totalSteps": 1385,
         "stepFrequencies": null,
-        "averageStepFrequency": 76.22674756230336,
+        "averageStepFrequency": 78.90233567244141,
         "maxDiffOfAltitude": 0.0,
         "kelotonData": null
     },
