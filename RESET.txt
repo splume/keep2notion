@@ -1,0 +1,3 @@
+# Resetting repository to a previous commit
+
+This repository has been reset to the state of commit: 3b83a19a70463802b2f25b75ac0e966a14bdd2e5.
