@@ -12,6 +12,24 @@
 > [!IMPORTANT]  
 > 关注公众号回复Keep获取教程
 
+### 热力图展示
+
+| 变量 | 作用 |
+| --- | --- |
+| `HEATMAP_PLACEHOLDER_URL` | 可选。新建运动类型页面时临时插入的 embed 地址，默认是 `https://example.com/keep2notion-heatmap`。 |
+| `HEATMAP_SEARCH_PREFIXES` | 可选。逗号分隔的 URL 前缀，用于识别已有 Notion 热力图 embed 块。 |
+| `HEATMAP_EMBED_BASE_URL` | 可选。如果你自己部署了热力图展示页，可以设置这个地址；未设置时直接把 GitHub raw SVG URL 写入 Notion。 |
+| `DATE_ICON_URL_TEMPLATE` | 可选。日期图标 URL 模板，支持 `{type}` 和 `{date}`，例如 `https://example.com/icon?type={type}&date={date}`。未设置时不再使用日期图标服务。 |
+| `IMAGE_UPLOAD_URL` / `IMAGE_BASE_URL` | 可选。替换旧图床上传接口；当前默认封面逻辑会优先使用 GitHub raw 链接。 |
+
+热力图 SVG 会保存到 `OUT_FOLDER/` 和 `heatmap/`，GitHub Action 会先提交并推送这些文件，再把 GitHub raw SVG 地址写入 Notion：
+
+```text
+https://raw.githubusercontent.com/<REPOSITORY>/<branch>/heatmap/<hash>/<file>.svg
+```
+
+仓库需要是公开仓库，否则 Notion 无法直接读取 GitHub raw 文件。
+
 ![扫码_搜索联合传播样式-标准色版](https://github.com/malinkang/weread2notion-pro/assets/3365208/32fbce17-9a03-4e36-9a39-6e6a34aa3aef)
 
 
@@ -28,4 +46,3 @@
 如果你觉得本项目帮助了你，请作者喝一杯咖啡，你的支持是作者最大的动力。本项目会持续更新。
 
 ![](./asset/WechatIMG27.jpg)
-

@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
+permissions:
+  contents: write
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -50,13 +52,16 @@ jobs:
           RANDOM_FILENAME=$(uuidgen).svg
           mv ./OUT_FOLDER/notion.svg ./OUT_FOLDER/$RANDOM_FILENAME
           echo "Renamed file to $RANDOM_FILENAME"
-      - name: udpate heatmap 
+      - name: Generate type heatmaps
         run: |
-            update_heatmap
-      - name: push
+          HEATMAP_MODE=generate update_heatmap
+      - name: Push heatmap files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
           git commit -m 'add new heatmap' || echo "nothing to commit"
           git push || echo "nothing to push"
+      - name: Update Notion heatmap
+        run: |
+          HEATMAP_MODE=update update_heatmap
