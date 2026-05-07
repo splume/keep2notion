@@ -21,6 +21,11 @@ from keep2notion.utils import (
     timestamp_to_date,
     get_property_value,
 )
+from keep2notion.config import (
+    get_date_icon_url,
+    get_heatmap_placeholder_url,
+    get_heatmap_search_prefixes,
+)
 load_dotenv()
 TAG_ICON_URL = "https://www.notion.so/icons/tag_gray.svg"
 USER_ICON_URL = "https://www.notion.so/icons/user-circle-filled_gray.svg"
@@ -108,7 +113,7 @@ class NotionHelper:
                     child.get("id")
                 )
             elif child["type"] == "embed" and child.get("embed").get("url"):
-                if child.get("embed").get("url").startswith("https://heatmap.malinkang.com/"):
+                if child.get("embed").get("url").startswith(get_heatmap_search_prefixes()):
                     self.heatmap_block_id = child.get("id")
             # 如果子块有子块，递归调用函数
             if "has_children" in child and child["has_children"]:
@@ -177,7 +182,7 @@ class NotionHelper:
             if id == self.type_database_id:
                 self.append_blocks(
                     block_id=page_id,
-                    children=[get_embed("https://heatmap.malinkang.com/")],
+                    children=[get_embed(get_heatmap_placeholder_url())],
                 )
         else:
             page_id = response.get("results")[0].get("id")
@@ -257,7 +262,7 @@ class NotionHelper:
         return results
 
     def get_date_icon(self, date, type):
-        return f"https://notion-icon.malinkang.com/?type={type}&date={date.strftime('%Y-%m-%d')}"
+        return get_date_icon_url(date, type)
     
     def get_date_relation(self, properties, date):
         properties["年"] = get_relation(
@@ -292,5 +297,5 @@ class NotionHelper:
             # 检查子块的类型
             if child["type"] == "embed" and child.get("embed").get("url"):
                 url =  child.get("embed").get("url")
-                if url.startswith("https://heatmap.malinkang.com/"):
+                if url.startswith(get_heatmap_search_prefixes()):
                     return child.get("id")

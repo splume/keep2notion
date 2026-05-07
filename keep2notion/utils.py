@@ -4,7 +4,6 @@ from datetime import timedelta
 import hashlib
 import os
 import requests
-import base64
 from keep2notion.config import (
     RICH_TEXT,
     URL,
@@ -15,7 +14,9 @@ from keep2notion.config import (
     STATUS,
     TITLE,
     SELECT,
-    MULTI_SELECT
+    MULTI_SELECT,
+    get_image_base_url,
+    get_image_upload_url,
 )
 import pendulum
 
@@ -299,36 +300,19 @@ def str_to_timestamp(date):
     # 获取时间戳
     return int(dt.timestamp())
 
-upload_url = 'https://i.malinkang.com/upload'
-
-
-def upload_heatmap(folder_path, filename,file_path):
-    # 将文件内容编码为Base64
-    with open(file_path, 'rb') as file:
-        content_base64 = base64.b64encode(file.read()).decode('utf-8')
-
-    # 构建请求的JSON数据
-    data = {
-        'file': content_base64,
-        'filename': filename,
-        'folder': folder_path
-    }
-
-    response = requests.post("https://wereadassets.malinkang.com/", json=data)
-
-    if response.status_code == 200:
-        print('File uploaded successfully.')
-        return response.text
-    else:
+def upload_image(file_path):
+    upload_url = get_image_upload_url()
+    image_base_url = get_image_base_url()
+    if not upload_url or not image_base_url:
         return None
 
-def upload_image(file_path):
     with open(file_path, 'rb') as file:
         files = {'file': file}
         response = requests.post(upload_url, files=files)
         print(response.text)
         if response.status_code == 200:
-            url = 'https://i.malinkang.com'+response.json()[0].get("src")
+            src = response.json()[0].get("src")
+            url = image_base_url.rstrip('/') + "/" + src.lstrip("/")
             return url
         else:
             print("File upload failed")
