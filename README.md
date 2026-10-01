@@ -30,16 +30,6 @@ https://raw.githubusercontent.com/<REPOSITORY>/<branch>/heatmap/<hash>/<file>.sv
 
 仓库需要是公开仓库，否则 Notion 无法直接读取 GitHub raw 文件。
 
-![扫码_搜索联合传播样式-标准色版](https://github.com/malinkang/weread2notion-pro/assets/3365208/32fbce17-9a03-4e36-9a39-6e6a34aa3aef)
-
-
-
-## 群
-> [!IMPORTANT]  
-> 欢迎加入微信群讨论。可以讨论使用中遇到的任何问题，也可以讨论Notion使用，后续我也会在群中分享更多Notion自动化工具。
-
-![WechatIMG53](https://github.com/malinkang/weread2notion-pro/assets/3365208/351f05cb-a3e7-4bfd-8602-26f81d111388)
-
 
 ## 捐赠
 
