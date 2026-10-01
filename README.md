@@ -3,6 +3,8 @@
 
 本项目通过Github Action每天定时同步Keep跑步数据到Notion。
 
+同步运动记录和基础热力图，直接访问 Keep 与 Notion。封面使用原始外链，热力图文件保存在用户自己的公开Runner 仓库。
+
 预览效果：https://www.notion.so/malinkang/7c556041c7fd4e21a6713673b6168fd4?pvs=4
 
 
