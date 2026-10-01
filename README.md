@@ -9,8 +9,6 @@
 
 ## 使用
 
-> [!IMPORTANT]  
-> 关注公众号回复Keep获取教程
 
 ### 热力图展示
 
@@ -29,10 +27,3 @@ https://raw.githubusercontent.com/<REPOSITORY>/<branch>/heatmap/<hash>/<file>.sv
 ```
 
 仓库需要是公开仓库，否则 Notion 无法直接读取 GitHub raw 文件。
-
-
-## 捐赠
-
-如果你觉得本项目帮助了你，请作者喝一杯咖啡，你的支持是作者最大的动力。本项目会持续更新。
-
-![](./asset/WechatIMG27.jpg)
